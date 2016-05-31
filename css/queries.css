@@ -1,0 +1,71 @@
+/* ipad in landscape to dekstop devices */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row { padding: 0 2%; }
+}
+
+/*iPad in portraight 1023px to 1200px */
+@media only screen and (max-width: 1023px) {
+    html, body { font-size: 18px; }
+    section { padding: 60px; }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    .works-step { margin-bottom: 40px; }
+    .works-step:last-of-type { margin-bottom: 60px; }
+    .app-screen { width: 50%; }
+    .icon-small {
+        width: 20px;
+        margin-right: 10px;
+    }
+    .city-feature { font-size: 0.9rem; }
+    .plan-box {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .plan-price { font-size: 2.5rem; }
+    .contact-form { width: 80%; }
+}
+
+/* Smaller then ipad 481px to 767px */
+@media only screen and (max-width: 767px) {
+    html, body { font-size: 16px; }
+    section { padding: 30px 0 }
+    .row,
+    .hero-text-box { padding: 0 4%; }
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    .main-nav { display: none; }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    .long-copy {
+        width: 100%;
+        margin-right: 0;
+    }
+    .works-step {margin-bottom: 20px; }
+    .works-step:last-of-type { margin-bottom: 20px; }
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+        padding: 4px;
+        font-size: 1.2rem;
+    }
+    .app-screen { width: 40%; }
+    .steps-box:first-child { text-align: center; }
+}
+
+/* Small phones 0 - 480 px */
+@media only screen and (max-width: 480px) {
+    section { padding: 25px 0; }
+    .contact-form { width: 100%; }
+}
+

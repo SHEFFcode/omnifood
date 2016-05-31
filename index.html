@@ -12,7 +12,9 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/vendor/_grid.css">
+        <link rel="stylesheet" href="css/vendor/_animate.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/queries.css">
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -21,28 +23,29 @@
             <nav>
                 <div class="row">
                     <img src="img/logo-white.png" alt="while logo" class="logo">
+                    <img src="img/logo.png" alt="while logo" class="logo-black">
                     <ul class="main-nav">
-                        <li><a href="#">Food Delivery</a></li>
-                        <li><a href="#">How to Works</a></li>
-                        <li><a href="#">Our Cities</a></li>
-                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#features">Food Delivery</a></li>
+                        <li><a href="#works">How to Works</a></li>
+                        <li><a href="#cities">Our Cities</a></li>
+                        <li><a href="#plans">Sign Up</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-                <a class="btn btn-full" href="#">I’m hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full scroll-to-plans" href="#">I’m hungry</a>
+                <a class="btn btn-ghost scroll-to-start" href="#">Show me more</a>
             </div>
         </header>
-        <section class="section-features">
+        <section class="section-features" id="features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food.</h2>
                 <p class="long-copy">
                     Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
                 </p>
             </div>
-            <div class="row">
+            <div class="row waypoint1">
                 <div class="col span-1-of-4 box">
                     <i class="ion-ios-infinite-outline icon-big"></i>
                     <h3>Up to 365 days/year</h3>
@@ -121,13 +124,13 @@
             </ul>
         </section>
 
-        <section class="section-steps">
+        <section class="section-steps" id="works">
             <div class="row">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
-                    <img src="img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
+                    <img src="img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen waypoint2">
                 </div>
                 <div class="col span-1-of-2 steps-box">
                     <div class="works-step">
@@ -149,10 +152,10 @@
             </div>
         </section>
 
-        <section class="section-cities">
+        <section class="section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
-                <div class="row">
+                <div class="row waypoint3">
                     <div class="col span-1-of-4 box">
                         <img src="img/lisbon-3.jpg" alt="Lisbon">
                         <h3>Lisbon</h3>
@@ -248,13 +251,13 @@
 
         </section>
 
-        <section class="section-plans">
+        <section class="section-plans" id="plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box waypoint4">
                         <div>
                             <h3>Premium</h3>
                             <p class="plan-price">399$ <span>/ month</span></p>
@@ -404,7 +407,11 @@
                 <p>Copyright &copy; 2016 SHEFFmachine All rights reserved</p>
             </div>
         </footer>
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>
