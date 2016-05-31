@@ -55,4 +55,16 @@ $(document).ready(function () {
     }, {
         offset: '50%'
     });
+
+    /* Mobile Nav */
+    $('.mobile-nav-icon').click(function () {
+        var nav     = $('.main-nav');
+        var icon    = $('.mobile-nav-icon i');
+        nav.slideToggle(200);
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round').removeClass('ion-navicon-round');
+        } else {
+            icon.addClass('ion-navicon-round').removeClass('ion-close-round');
+        }
+    });
 });
