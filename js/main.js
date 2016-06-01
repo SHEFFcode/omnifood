@@ -67,4 +67,11 @@ $(document).ready(function () {
             icon.addClass('ion-navicon-round').removeClass('ion-close-round');
         }
     });
+    /* Google Maps */
+    new GMaps({
+        div: '#map',
+        lat: 37.7749,
+        lng: -122.4194,
+        zoom: 12
+    });
 });
